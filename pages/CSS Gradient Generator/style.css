@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+}
+
+.header-section {
+    background: #e0e0e0;
+    color: #666;
+    width: 100%;
+    height: 16vh;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.header-section h1 {
+    font-size: 2rem;
+    background: linear-gradient(to right, #3494E6, #EC6EAD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    position: relative;
+    padding-top: 2rem;
+    font-weight: 300;
+}
+
+.color-section {
+    width: 100%;
+    height: 84vh;
+    position: relative;
+}
+
+.generate-btn {
+    width: 8rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    background: rgb(31, 31, 31, .3);
+    border-radius: 12px;
+    color: #fff;
+    border: none;
+    transition: all .3s;
+    cursor: pointer;
+    font-weight: 700;
+
+}
+
+
+.btn:hover {
+    transform: scale(1.1);
+    background: rgb(31, 31, 31, .5);
+    box-shadow: 0 3px 14px -4px #000;
+}
+
+.btn:active,
+.btn:focus {
+    outline: 0;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.copy-btn {
+    width: 4.8rem;
+    height: 2rem;
+    font-size: .7rem;
+    background: rgb(31, 31, 31, .3);
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    transition: all .3s;
+    cursor: pointer;
+    margin-top: .5rem;
+    font-weight: 700;
+}
+
+.css-code {
+    background: rgba(230, 230, 230, .2);
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: rgb(59, 59, 59);
+    margin-top: 2rem;
+    padding: 3px;
+}
+
