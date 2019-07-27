@@ -9,14 +9,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
-    <link href="https://cdn.materialdesignicons.com/3.8.95/css/materialdesignicons.min.css
-    " media="all" rel="stylesheet" />
+    <link href="https://cdn.materialdesignicons.com/3.8.95/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
     <script src="/js/demo.js"></script>
     <script src="/js/jquery.particlebackground.js"></script>
     <!--Aos css-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel='stylesheet' type='text/css' media='screen' href='cj.css'>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         window.heap = window.heap || [], heap.load = function (e, t) {
             window.heap.appid = e, window.heap.config = t = t || {};
             var r = t.forceSSL || "https:" === document.location.protocol,
@@ -34,7 +33,7 @@
                 ], c = 0; c < p.length; c++) heap[p[c]] = o(p[c])
         };
         heap.load("2900565634");
-    </script>
+    </script> -->
 </head>
 <body>
     <!--Home-->
@@ -55,18 +54,14 @@
     </section>
     <!--NavBar-->
     <nav class="flex desk">
-
-        <a href=""><img src="images/logo.png" class="navlogo" alt="LOGO"></a>
-
+        <a href=""><img src="/images/logo.png" class="navlogo" alt="LOGO"></a>
     </nav>
     <!-- ABOUT -->
     <section id="about">
-
         <div class="aboutsec">
             <h1 class="aboutheader" data-aos="slide-right" data-aos-duration="1000">About</h1>
             <div class="headerbar" data-aos="slide-left" data-aos-duration="1000"></div>
         </div>
-
         <div class="flexabout">
             <div class="container textli" data-aos="slide-right" data-aos-duration="1000">
                 <ul>Hi, My name is Chaman Jatoliya, a Passionate & <br>
@@ -309,6 +304,40 @@
                     </li>
                 </div>
             </ul>
+
+
+        </div>
+    </section>
+    <!--work-->
+    <section id="work">
+        <div>
+        <div class="aboutsec">
+            <h1 class="aboutheader" data-aos="slide-right" data-aos-duration="1000">Work</h1>
+            <div class="headerbar" data-aos="slide-left" data-aos-duration="1000"></div>
+        </div>
+        <p class="lead">
+            “You can do anything you set your mind to.”<br>- Benjamin Franklin
+        </p>
+        </div>
+        <div class="CardDiv">
+        <div data-aos="flip-up" class="card">
+            <img class="WorkImg" src="/images/jblpython.png" alt="Python Track Price App">
+            <p class="AppName">Track Price App Python</p>
+            <p class="CardText">This python script tracks product price and send email if price falls down.</p>
+            <a class="icon GitIcon"  href="https://github.com/dev-cj/Track-price-app" target="_blank"><i class="mdi mdi-github-circle"></i></a>
+        </div>
+        <div data-aos="flip-up" class="card">
+            <img class="WorkImg" src="/images/gradient.png" alt="gradient generatorS">
+            <p class="AppName">CSS Gradient Generator</p>
+            <p class="CardText">A gradient generator to random gradients and user can copy css gradient code.</p>
+            <a class="icon GitIcon"  href="https://github.com/dev-cj/background-generator" target="_blank"><i class="mdi mdi-github-circle"></i></a>
+        </div>
+        <div data-aos="flip-up" class="card">
+            <img class="WorkImg" src="/images/robofriends.png" alt="gradient generatorS">
+            <p class="AppName">Robofriends</p>
+            <p class="CardText">React app I created learning React and API, it takes names and mail id from json file then send it to a API to generate Robots.</p>
+            <a class="icon GitIcon"  href="https://github.com/dev-cj/robotfriends" target="_blank"><i class="mdi mdi-github-circle"></i></a>           
+        </div>
         </div>
     </section>
     <!--Contact-->
@@ -327,31 +356,30 @@
         </div>
 
     </section>
-    <!--Footer-->
     <div class="footerdiv">
         <footer class="footer">
             <a href="#">
                 <i class="mdi mdi-chevron-double-up page-link"></i>
             </a>
-            <div class="iconflex">
+            
+            <div data-aos="flip-up" class="iconflex">
                 <a href="https://www.linkedin.com/in/chamanjatoliya/" target="_blank">
-                    <div class="flex icon" id="icon-2">
+                    <div class="flex icon md" id="icon-2">
                         <i class="mdi mdi-linkedin"></i>
                     </div>
                 </a>
-
                 <a href="https://instagram.com/cj.srcc/" target="_blank">
-                    <div class="flex icon" id="icon-4">
+                    <div class="flex icon md" id="icon-4">
                         <i class="mdi mdi-instagram"></i>
                     </div>
                 </a>
                 <a href="mailto:chamanjatoliya@gmail.com" target="_top">
-                    <div class="flex icon" id="icon-3">
+                    <div class="flex icon md" id="icon-3">
                         <i class="mdi mdi-email-outline"></i>
                     </div>
                 </a>
                 <a href="https://api.whatsapp.com/send?phone=9540337773" target="_blank">
-                    <div class="flex icon" id="icon-5">
+                    <div class="flex icon md" id="icon-5">
                         <i class="mdi mdi-whatsapp"></i>
                     </div>
                 </a>

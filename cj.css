@@ -18,23 +18,19 @@
     opacity: 1;
   }
 }
-
 html {
   scroll-behavior: smooth;
 }
-
-
 a {
   text-decoration: none;
   color: inherit;
 }
-
 body {
   /* color: #fff; */
   /* font-family: 'Raleway'; */
   text-align: center;
   margin: 0px;
-  font-size: 8pt;
+  /* font-size: 8pt; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -253,13 +249,13 @@ section:nth-of-type(1) .button:hover .mdi {
   margin-bottom: 0;
   padding-bottom: 0%;
 }
+
 .headerbar{
   width: 8rem;
   margin: auto;
   height: 2px;
   background: #6e6e6e;
-  transform: translate(-50%);
-  
+  transform: translate(-50%);  
 }
 
 .profilepic {
@@ -268,7 +264,6 @@ section:nth-of-type(1) .button:hover .mdi {
   height: 250px;
   border-radius: 70%;
   box-shadow: 0 0 14px 0px #1b242f;
-
 }
 .textli{
   text-align: left;
@@ -294,7 +289,6 @@ section:nth-of-type(1) .button:hover .mdi {
   margin: 0%;
   list-style: none;
   padding: 0;
-  
 }
 .list{
   padding: 20px 30px 30px 30px;
@@ -311,9 +305,8 @@ section:nth-of-type(1) .button:hover .mdi {
   margin: 0 auto;
 }
 .sp{
-  margin-top: 0%;
+  margin-top: 0;
   margin-bottom: 0;
-  
 }
 .aoslist{
   padding: 0;
@@ -512,38 +505,10 @@ footer .mdi-chevron-double-up:hover {
 }
 .hq{
   margin-top: 5%;
+  margin-left: 6%;
+  margin-right: 6%;
   color: #71e2e6;
   font-family: 'Raleway';
-}
-.CardsContainer {
-  
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items:center;
-  overflow: auto;
-}
-.Workcard {
-  margin: 10px ;
-  background-color: #9b9999;
-  height: 20rem;
-  width: 15rem;
-  min-width: 10rem;
-  border: none;
-  font-family: 'Open Sans', sans-serif;  
-  outline: none;
-  text-align: center;
-  border-radius: 8px;
-  transition: 0.3s;
-  overflow: hidden;
-  cursor: pointer;
-  position: relative;
-  background-color: #f5f5f5;
-}
-.wcimg{
-  max-width:100%;
-  max-height:100%;
 }
 
 .headParagraph {
@@ -558,4 +523,63 @@ footer .mdi-chevron-double-up:hover {
   text-align: left;
   font-weight: 500;
   color: #333;
+}
+
+/* cards css */
+.CardDiv{
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: unset;
+  overflow: auto;
+  margin: 0 14rem;
+  overflow-x: auto;
+  }
+.card{
+  justify-content: flex-start;
+  height: 50vh;
+  width: 30%;
+  background: #1b242f;
+  margin: 0 2rem;
+  min-width: 15rem;
+  overflow: hidden;
+  border-radius: 1.2rem;
+}
+
+@media (max-width: 767px) {
+.CardDiv{
+  margin-left: 7%;
+  margin-right: 7%;
+  padding: 0;
+}
+.card{
+  margin: 3%;
+}
+}
+.WorkImg{
+  max-width: 100%;
+}
+.AppName{
+  font-family: 'Raleway-bold';
+  color: #4bc0ce;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.CardText{
+  font-family: Open sans;
+  color: #fff;
+  margin: 2% 5%;
+}
+.GitIcon{
+  font-size: 2rem;
+  
+}
+@media (max-width: 767px){
+  .AppName, .CardText{
+    font-size: 1.2rem;
+  }
+  .GitIcon{
+    font-size: 4rem;
+  }
+  
 }
