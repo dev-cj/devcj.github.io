@@ -574,6 +574,21 @@ footer .mdi-chevron-double-up:hover {
   font-size: 2rem;
   
 }
+.CardDiv::-webkit-scrollbar {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+  
+.CardDiv::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px rgb(58, 118, 157);
+  border-radius: 10px;
+}
+  
+.CardDiv::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #78dce8; 
+  /* box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
+}
 @media (max-width: 767px){
   .AppName, .CardText{
     font-size: 1.2rem;
