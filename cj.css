@@ -534,6 +534,7 @@ footer .mdi-chevron-double-up:hover {
   overflow: auto;
   margin: 0 14rem;
   overflow-x: auto;
+  padding-bottom: 10px;
   }
 .card{
   justify-content: flex-start;
