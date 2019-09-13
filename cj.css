@@ -580,7 +580,7 @@ footer .mdi-chevron-double-up:hover {
 }
   
 .CardDiv::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 10px rgb(58, 118, 157);
+  box-shadow: inset 0 0 10px rgb(86, 216, 228);
   border-radius: 10px;
 }
   
@@ -597,4 +597,8 @@ footer .mdi-chevron-double-up:hover {
     font-size: 4rem;
   }
   
+}
+::selection {
+  background: #cfc5fd;
+  color: #1b242f;
 }
