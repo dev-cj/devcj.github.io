@@ -537,15 +537,19 @@ footer .mdi-chevron-double-up:hover {
   padding-bottom: 10px;
   }
 .card{
+  display: flex;
+  flex-direction: column;
   box-shadow: 0px 14px 20px 1px #515151d1;
-  justify-content: flex-start;
   height: 50vh;
   width: 30%;
   background: #1b242f;
   margin: 0 2rem;
   min-width: 15rem;
   overflow: hidden;
-  border-radius: 1.2rem;
+  border-radius: 1.3rem;
+  /* border: 2px solid white; */
+  padding: 14px;
+  padding-bottom: 0;
 }
 
 @media (max-width: 767px) {
@@ -560,6 +564,7 @@ footer .mdi-chevron-double-up:hover {
 }
 .WorkImg{
   max-width: 100%;
+  border-radius: 8px;
 }
 .AppName{
   font-family: 'Raleway-bold';
@@ -574,9 +579,19 @@ footer .mdi-chevron-double-up:hover {
 }
 .GitIcon{
   font-size: 2rem;
+  margin-top: auto;
+  margin-bottom: 7%;
+}
+.GitIcon>i:hover{
   border: 2px solid #68c1ce;
   border-radius: 22px;
-  padding: 1px;
+  padding: 2px;
+  box-shadow: 0 0 24px 9px #78dce8;
+}
+.GitIcon>i{
+  border: 2px solid #68c1ce;
+  border-radius: 22px;
+  padding: 2px;
 }
 .CardDiv::-webkit-scrollbar {
   width: 0.6rem;
@@ -594,13 +609,20 @@ footer .mdi-chevron-double-up:hover {
   /* box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
 }
 @media (max-width: 767px){
-  .AppName, .CardText{
+  .CardText{
     font-size: 1.2rem;
   }
-  .GitIcon{
-    font-size: 4rem;
+  .AppName{
+    font-size: 1rem;
   }
-  
+  .GitIcon{
+    font-size: 2rem;
+    margin-bottom: 3%;
+  }
+  .card{
+    padding: 0px; 
+    padding-bottom: 0;
+  }
 }
 ::selection {
   background: #cfc5fd;
