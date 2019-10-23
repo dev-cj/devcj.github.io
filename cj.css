@@ -330,7 +330,7 @@ section:nth-of-type(1) .button:hover .mdi {
   text-decoration: none;
   border-bottom: 2px #58DBE7 solid;
   transition: 0.3s;
-  -webkit-backface-visibility: hidden;
+  /* -webkit-backface-visibility: hidden; */
   outline: none;
   margin-top: 5px;
 }
@@ -338,7 +338,7 @@ section:nth-of-type(1) .button:hover .mdi {
 .adesk:active{
    background-color: #58DBE7;
    color: #fff;
-   -webkit-backface-visibility: hidden;
+   /* -webkit-backface-visibility: hidden; */
 } 
 @font-face {
   font-family: 'Glyphicons Halflings';
@@ -414,7 +414,7 @@ section:nth-of-type(1) .button:hover .mdi {
   border-bottom: 2px #58DBE7 solid;
   cursor: pointer;
   transition: 0.3s;
-  -webkit-backface-visibility: hidden;
+  /* -webkit-backface-visibility: hidden; */
   outline: none;
   margin-top: 100px;
 
@@ -424,7 +424,7 @@ section:nth-of-type(1) .button:hover .mdi {
 .Button:active {
   background-color: #58DBE7;
   color: #fff;
-  -webkit-backface-visibility: hidden;
+  /* -webkit-backface-visibility: hidden; */
 } 
 #work{
   padding-bottom: 0;
@@ -574,7 +574,9 @@ footer .mdi-chevron-double-up:hover {
 }
 .GitIcon{
   font-size: 2rem;
-  
+  border: 2px solid #68c1ce;
+  border-radius: 22px;
+  padding: 1px;
 }
 .CardDiv::-webkit-scrollbar {
   width: 0.6rem;
