@@ -628,3 +628,6 @@ footer .mdi-chevron-double-up:hover {
   background: #cfc5fd;
   color: #1b242f;
 }
+.mern::first-letter {
+  color: #E31B6D;
+}
