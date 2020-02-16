@@ -1,465 +1,792 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>DevCJ</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
-    <link href="https://cdn.materialdesignicons.com/3.8.95/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link
+      href="https://cdn.materialdesignicons.com/3.8.95/css/materialdesignicons.min.css"
+      media="all"
+      rel="stylesheet"
+    />
     <script src="/js/demo.js"></script>
     <script src="/js/jquery.particlebackground.js"></script>
     <!--Aos css-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel='stylesheet' type='text/css' media='screen' href='cj.css'>
+    <link rel="stylesheet" type="text/css" media="screen" href="cj.css" />
     <script type="text/javascript">
-        window.heap = window.heap || [], heap.load = function (e, t) {
-            window.heap.appid = e, window.heap.config = t = t || {};
-            var r = t.forceSSL || "https:" === document.location.protocol,
-                a = document.createElement("script");
-            a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") +
-                "//cdn.heapanalytics.com/js/heap-" + e + ".js";
-            var n = document.getElementsByTagName("script")[0];
-            n.parentNode.insertBefore(a, n);
-            for (var o = function (e) {
-                    return function () {
-                        heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
-                    }
-                }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify",
-                    "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"
-                ], c = 0; c < p.length; c++) heap[p[c]] = o(p[c])
-        };
-        heap.load("2900565634");
+      ;(window.heap = window.heap || []),
+        (heap.load = function(e, t) {
+          ;(window.heap.appid = e), (window.heap.config = t = t || {})
+          var r = t.forceSSL || 'https:' === document.location.protocol,
+            a = document.createElement('script')
+          ;(a.type = 'text/javascript'),
+            (a.async = !0),
+            (a.src =
+              (r ? 'https:' : 'http:') +
+              '//cdn.heapanalytics.com/js/heap-' +
+              e +
+              '.js')
+          var n = document.getElementsByTagName('script')[0]
+          n.parentNode.insertBefore(a, n)
+          for (
+            var o = function(e) {
+                return function() {
+                  heap.push(
+                    [e].concat(Array.prototype.slice.call(arguments, 0))
+                  )
+                }
+              },
+              p = [
+                'addEventProperties',
+                'addUserProperties',
+                'clearEventProperties',
+                'identify',
+                'resetIdentity',
+                'removeEventProperty',
+                'setEventProperties',
+                'track',
+                'unsetEventProperty'
+              ],
+              c = 0;
+            c < p.length;
+            c++
+          )
+            heap[p[c]] = o(p[c])
+        })
+      heap.load('2900565634')
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <!--Home-->
     <section id="home" class="flex height-fix">
-        <div id="pat" class="canvas">
-            <div id="particles"></div>
+      <div id="pat" class="canvas">
+        <div id="particles"></div>
+      </div>
+      <div class="flex rl">
+        <div class="text">
+          Hello World, I'm <span class="highlight">CJ</span>.
+          <br />
+          I'm learning full-stack development.
         </div>
-        <div class="flex rl">
-            <div class="text">
-                Hello World, I'm <span class="highlight">CJ</span>.
-                <br>
-                I'm learning full-stack development.
-            </div>
-            <a href="#about">
-                <div class="button page-link" dest="about">View my work <i class="mdi mdi-arrow-right"></i></div>
-            </a>
-        </div>
+        <a href="#about">
+          <div class="button page-link" dest="about">
+            View my work <i class="mdi mdi-arrow-right"></i>
+          </div>
+        </a>
+      </div>
     </section>
     <!--NavBar-->
     <nav class="flex desk">
-        <a href=""><img src="/images/logo.png" class="navlogo" alt="LOGO CJ"></a>
+      <a href=""><img src="/images/logo.png" class="navlogo" alt="LOGO CJ"/></a>
     </nav>
     <!-- ABOUT -->
     <section id="about">
-        <div class="aboutsec">
-            <h1 class="aboutheader" data-aos="slide-right" data-aos-duration="1000">About</h1>
-            <div class="headerbar" data-aos="slide-left" data-aos-duration="1000"></div>
+      <div class="aboutsec">
+        <h1 class="aboutheader" data-aos="slide-right" data-aos-duration="1000">
+          About
+        </h1>
+        <div
+          class="headerbar"
+          data-aos="slide-left"
+          data-aos-duration="1000"
+        ></div>
+      </div>
+      <div class="flexabout">
+        <div
+          class="container textli"
+          data-aos="slide-right"
+          data-aos-duration="1000"
+        >
+          <ul>
+            Hi, My name is Chaman Jatoliya, a Passionate &
+            <br />
+            Self-Taught<span class="lighttext"
+              >(with the help of THE Internet:)</span
+            ><br />
+            learning and exploring full stack development; from Delhi, India.
+          </ul>
+          <ul>
+            I read books and love collecting them.
+          </ul>
+          <ul>
+            I drink a lot of tea.
+          </ul>
+          <ul>
+            I love to cook (and eat).
+          </ul>
+          <ul>
+            I am a bit of a gym freak.
+          </ul>
+          <ul>
+            I worship Internet and Elon Musk.
+          </ul>
         </div>
-        <div class="flexabout">
-            <div class="container textli" data-aos="slide-right" data-aos-duration="1000">
-                <ul>Hi, My name is Chaman Jatoliya, a Passionate & <br>
-                    Self-Taught<span class="lighttext">(with the help of THE Internet:)</span><br>
-                    learning and exploring full stack development; from Delhi, India.</ul>
-                <ul>I read books and love collecting them.</ul>
-                <ul>I drink a lot of tea.</ul>
-                <ul>I love to cook (and eat).</ul>
-                <ul>I am a bit of a gym freak.</ul>
-                <ul>I worship Internet and Elon Musk.</ul>
-            </div>
-            <div class="container" data-aos="slide-left" data-aos-duration="1000">
-                <img src="/images/p.jpg" alt="self-portrait" class="profilepic">
-            </div>
+        <div class="container" data-aos="slide-left" data-aos-duration="1000">
+          <img src="/images/p.jpg" alt="self-portrait" class="profilepic" />
         </div>
+      </div>
     </section>
     <!--SKILLS-->
     <section id="skills">
-        <div class="aboutsec">
-            <h1 class="aboutheader" data-aos="slide-right" data-aos-duration="1000">Skills</h1>
-            <div class="headerbar" data-aos="slide-left" data-aos-duration="1000"></div>
-        </div>
-        <p class="lead">
-            “Life without knowledge is death in disguise.”<br>- Talib Kweli
-        </p>
-        <div>
-            <ul class="listskills">
-                <div data-aos="flip-up" data-aos-duration="1000">
-                    <li class="list">
-                        <img class="icon" src="/images/logos/html5.svg" alt="html5">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                        </span>
-                        <a class="adesk" href="https://developer.mozilla.org/en-US/docs/Learn/HTML"
-                        rel="noreferrer" target="_blank">Html5</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000">
-                    <li class="list">
-                        <img class="icon" src="/images/logos/css3.svg" alt="css3">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                        </span>
-                        <a class="adesk" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"
-                        rel="noreferrer" target="_blank">CSS3</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000">
-                    <li class="list">
-                        <img class="icon" src="/images/logos/javascript.svg" alt="vanilla javascript">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                        </span>
-                        <a class="adesk" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                        rel="noreferrer" target="_blank">Javascript</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000">
-                    <li class="list">
-                        <img class="icon" src="/images/logos/jquery.svg" alt="jquery">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                        </span>
-                        <a class="adesk" href="https://jquery.com/" rel="noreferrer" target="_blank">jQuery</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000">
-                    <li class="list">
-                        <img class="icon" src="/images/logos/mongodb.svg" alt="react js">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                        </span><a class="adesk mern" href="https://mongodb.com/" rel="noreferrer" target="_blank">MongoDB</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000">
-                    <li class="list">
-                        <img class="icon" src="/images/logos/expressjs.svg" alt="react js">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                        </span><a class="adesk mern" href="https://expressjs.com/" rel="noreferrer" target="_blank">ExpressJS</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000">
-                    <li class="list">
-                        <img class="icon" src="/images/logos/react.svg" alt="react js">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                        </span><a class="adesk mern" href="https://reactjs.org/" rel="noreferrer" target="_blank">ReactJS</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000" class="aoslist">
-                    <li class="list">
-                        <img class="icon sp" src="/images/logos/nodejs.svg" alt="node js">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                        </span>
-                        <a class="adesk mern" href="https://nodejs.org/en/" rel="noreferrer" target="_blank">NodeJS</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000" class="aoslist">
-                    <li class="list">
-                        <img class="icon sp" src="/images/logos/redux.svg" alt="node package manager">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                        </span>
-                        <a class="adesk" href="https://react-redux.js.org/" rel="noreferrer" target="_blank">React Redux</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000">
-                    <li class="list">
-                        <img class="icon" src="/images/logos/bootstrap.svg" alt="bootstrap">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                        </span>
-                        <a class="adesk" href="https://getbootstrap.com/" rel="noreferrer" target="_blank">Bootstrap</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000">
-                    <li class="list">
-                        <img class="icon" src="/images/logos/materialize.svg" alt="bootstrap">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                        </span>
-                        <a class="adesk" href="https://materializecss.com/" rel="noreferrer" target="_blank">Materialize CSS</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000">
-                    <li class="list">
-                        <img class="icon" src="/images/logos/bulma.svg" alt="bootstrap">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                        </span>
-                        <a class="adesk" href="https://bulma.io/" rel="noreferrer" target="_blank">Bulma CSS</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000">
-                    <li class="list">
-                        <img class="icon" src="/images/logos/wordpress.svg" alt="wordpress">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                        </span>
-                        <a class="adesk" href="https://wordpress.org/" rel="noreferrer" target="_blank">Wordpress</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000">
-                    <li class="list">
-                        <img class="icon" src="/images/logos/ui.svg" alt="ui ux">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                        </span>
-                        <a class="adesk" href="/" target="_blank">UI/UX</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000">
-                    <li class="list">
-                        <img class="icon" src="/images/logos/python.svg" alt="python">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                        </span>
-                        <a class="adesk" href="https://www.python.org/" rel="noreferrer" target="_blank">Python</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000">
-                    <li class="list">
-                        <img class="icon" src="/images/logos/git.svg" alt="github">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                        </span>
-                        <a class="adesk" href="https://github.com/" rel="noreferrer" target="_blank">Github</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000">
-                    <li class="list">
-                        <img class="icon" src="/images/logos/photoshop.svg" alt="Adobe Photoshop">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                        </span>
-                        <a class="adesk" href="https://www.adobe.com/in/products/photoshop.html"
-                        rel="noreferrer" target="_blank">Photoshop</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000">
-                    <li class="list">
-                        <img class="icon" src="/images/logos/ai.svg" alt="Adobe illustrator">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                        </span>
-                        <a class="adesk" href="https://www.adobe.com/in/products/illustrator.html"
-                        rel="noreferrer" target="_blank">Illustrator</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000">
-                    <li class="list">
-                        <img class="icon" src="/images/logos/ae.svg" alt="after effects">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                        </span>
-                        <a class="adesk" href="https://www.adobe.com/in/products/aftereffects.html" rel="noreferrer" target="_blank">After Effects</a>
-                    </li>
-                </div>
-                <div data-aos="flip-up" data-aos-duration="1000">
-                    <li class="list">
-                        <img class="icon" src="/images/logos/prpro.svg" alt="premiere pro">
-                        <span class="ability-score">
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star filled"></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                        </span>
-                        <a class="adesk" href="https://www.adobe.com/in/products/premiere.html" rel="noreferrer" target="_blank">Premiere
-                            Pro</a>
-                    </li>
-                </div>
-            </ul>
-        </div>
+      <div class="aboutsec">
+        <h1 class="aboutheader" data-aos="slide-right" data-aos-duration="1000">
+          Skills
+        </h1>
+        <div
+          class="headerbar"
+          data-aos="slide-left"
+          data-aos-duration="1000"
+        ></div>
+      </div>
+      <p class="lead">
+        “Life without knowledge is death in disguise.”<br />- Talib Kweli
+      </p>
+      <div>
+        <ul class="listskills">
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
+              <img class="icon" src="/images/logos/html5.svg" alt="html5" />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+              </span>
+              <a
+                class="adesk"
+                href="https://developer.mozilla.org/en-US/docs/Learn/HTML"
+                rel="noreferrer"
+                target="_blank"
+                >Html5</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
+              <img class="icon" src="/images/logos/css3.svg" alt="css3" />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star "></span>
+              </span>
+              <a
+                class="adesk"
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"
+                rel="noreferrer"
+                target="_blank"
+                >CSS3</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
+              <img
+                class="icon"
+                src="/images/logos/javascript.svg"
+                alt="vanilla javascript"
+              />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star "></span>
+              </span>
+              <a
+                class="adesk"
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                rel="noreferrer"
+                target="_blank"
+                >Javascript</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
+              <img class="icon" src="/images/logos/jquery.svg" alt="jquery" />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star"></span>
+              </span>
+              <a
+                class="adesk"
+                href="https://jquery.com/"
+                rel="noreferrer"
+                target="_blank"
+                >jQuery</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
+              <img
+                class="icon"
+                src="/images/logos/mongodb.svg"
+                alt="react js"
+              />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star "></span> </span
+              ><a
+                class="adesk mern"
+                href="https://mongodb.com/"
+                rel="noreferrer"
+                target="_blank"
+                >MongoDB</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
+              <img
+                class="icon"
+                src="/images/logos/expressjs.svg"
+                alt="react js"
+              />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star "></span>
+                <span class="glyphicon glyphicon-star "></span> </span
+              ><a
+                class="adesk mern"
+                href="https://expressjs.com/"
+                rel="noreferrer"
+                target="_blank"
+                >ExpressJS</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
+              <img class="icon" src="/images/logos/react.svg" alt="react js" />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star "></span> </span
+              ><a
+                class="adesk mern"
+                href="https://reactjs.org/"
+                rel="noreferrer"
+                target="_blank"
+                >ReactJS</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000" class="aoslist">
+            <li class="list">
+              <img
+                class="icon sp"
+                src="/images/logos/nodejs.svg"
+                alt="node js"
+              />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star "></span>
+              </span>
+              <a
+                class="adesk mern"
+                href="https://nodejs.org/en/"
+                rel="noreferrer"
+                target="_blank"
+                >NodeJS</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000" class="aoslist">
+            <li class="list">
+              <img
+                class="icon sp"
+                src="/images/logos/redux.svg"
+                alt="node package manager"
+              />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star "></span>
+              </span>
+              <a
+                class="adesk"
+                href="https://react-redux.js.org/"
+                rel="noreferrer"
+                target="_blank"
+                >React Redux</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
+              <img
+                class="icon"
+                src="/images/logos/bootstrap.svg"
+                alt="bootstrap"
+              />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star "></span>
+              </span>
+              <a
+                class="adesk"
+                href="https://getbootstrap.com/"
+                rel="noreferrer"
+                target="_blank"
+                >Bootstrap</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
+              <img
+                class="icon"
+                src="/images/logos/materialize.svg"
+                alt="bootstrap"
+              />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star "></span>
+              </span>
+              <a
+                class="adesk"
+                href="https://materializecss.com/"
+                rel="noreferrer"
+                target="_blank"
+                >Materialize CSS</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
+              <img class="icon" src="/images/logos/bulma.svg" alt="bootstrap" />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star "></span>
+              </span>
+              <a
+                class="adesk"
+                href="https://bulma.io/"
+                rel="noreferrer"
+                target="_blank"
+                >Bulma CSS</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
+              <img
+                class="icon"
+                src="/images/logos/wordpress.svg"
+                alt="wordpress"
+              />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star "></span>
+              </span>
+              <a
+                class="adesk"
+                href="https://wordpress.org/"
+                rel="noreferrer"
+                target="_blank"
+                >Wordpress</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
+              <img class="icon" src="/images/logos/ui.svg" alt="ui ux" />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star "></span>
+              </span>
+              <a class="adesk" href="/" target="_blank">UI/UX</a>
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
+              <img class="icon" src="/images/logos/python.svg" alt="python" />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star "></span>
+                <span class="glyphicon glyphicon-star "></span>
+              </span>
+              <a
+                class="adesk"
+                href="https://www.python.org/"
+                rel="noreferrer"
+                target="_blank"
+                >Python</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
+              <img class="icon" src="/images/logos/git.svg" alt="github" />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star "></span>
+              </span>
+              <a
+                class="adesk"
+                href="https://github.com/"
+                rel="noreferrer"
+                target="_blank"
+                >Github</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
+              <img
+                class="icon"
+                src="/images/logos/photoshop.svg"
+                alt="Adobe Photoshop"
+              />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+              </span>
+              <a
+                class="adesk"
+                href="https://www.adobe.com/in/products/photoshop.html"
+                rel="noreferrer"
+                target="_blank"
+                >Photoshop</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
+              <img
+                class="icon"
+                src="/images/logos/ai.svg"
+                alt="Adobe illustrator"
+              />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star "></span>
+                <span class="glyphicon glyphicon-star "></span>
+              </span>
+              <a
+                class="adesk"
+                href="https://www.adobe.com/in/products/illustrator.html"
+                rel="noreferrer"
+                target="_blank"
+                >Illustrator</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
+              <img
+                class="icon"
+                src="/images/logos/ae.svg"
+                alt="after effects"
+              />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star "></span>
+              </span>
+              <a
+                class="adesk"
+                href="https://www.adobe.com/in/products/aftereffects.html"
+                rel="noreferrer"
+                target="_blank"
+                >After Effects</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
+              <img
+                class="icon"
+                src="/images/logos/prpro.svg"
+                alt="premiere pro"
+              />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star "></span>
+                <span class="glyphicon glyphicon-star "></span>
+              </span>
+              <a
+                class="adesk"
+                href="https://www.adobe.com/in/products/premiere.html"
+                rel="noreferrer"
+                target="_blank"
+                >Premiere Pro</a
+              >
+            </li>
+          </div>
+        </ul>
+      </div>
     </section>
     <!--work-->
     <section id="work">
-        <div>
+      <div>
         <div class="aboutsec">
-            <h1 class="aboutheader" data-aos="slide-right" data-aos-duration="1000">Work</h1>
-            <div class="headerbar" data-aos="slide-left" data-aos-duration="1000"></div>
+          <h1
+            class="aboutheader"
+            data-aos="slide-right"
+            data-aos-duration="1000"
+          >
+            Work
+          </h1>
+          <div
+            class="headerbar"
+            data-aos="slide-left"
+            data-aos-duration="1000"
+          ></div>
         </div>
         <p class="lead">
-            “You can do anything you set your mind to.”<br>- Benjamin Franklin
+          “You can do anything you set your mind to.”<br />- Benjamin Franklin
         </p>
-        </div>
-        <div class="CardDiv">
-            <div data-aos="flip-up" class="card" id="BrowseLater">
-                <img class="WorkImg" src="/images/browselater.png" alt="Browse Later extension">
-                <p class="AppName">Browse Later</p>
-                <p class="CardText">Save links in this chrome extension to browse later and increase your productivity</p>
-                <a class="icon GitIcon"  href="https://chrome.google.com/webstore/detail/browse-later/bcgkehdokpgflhkpfmoeihlndaklcbij/" rel="noreferrer" target="_blank"><i class="mdi mdi-link-variant"></i></a>
-            </div>
-        <div data-aos="flip-up" class="card">
-            <img class="WorkImg" src="/images/twitterreact.png" alt="twitter clone with reactjs">
-            <p class="AppName">TwitterClone React JS</p>
-            <p class="CardText">Full Stack CRUD app using MERN with React-Router, Authentication & Authorization with JWT.</p>
-            <a class="icon GitIcon"  href="https://bit.ly/fullstackMERN" rel="noreferrer" target="_blank"><i class="mdi mdi-link-variant"></i></a>           
-        </div>
-        <div data-aos="flip-up" class="card">
-            <img class="WorkImg" src="/images/gradient.png" alt="gradient generator">
-            <p class="AppName">CSS Gradient Generator</p>
-            <p class="CardText">A gradient generator to generate random gradients and allow user to copy css gradient code.</p>
-            <a class="icon GitIcon"  href="/pages/CSS Gradient Generator/gradient.html" rel="noreferrer" target="_blank"><i class="mdi mdi-link-variant"></i></a>
-        </div>
-        <div data-aos="flip-up" class="card">
-            <img class="WorkImg" src="/images/jblpython.png" alt="Python Track Price App">
-            <p class="AppName">Track Price App Python</p>
-            <p class="CardText">This python script tracks product price and send email if price falls down.</p>
-            <a class="icon GitIcon"  href="https://github.com/dev-cj/Track-price-app" rel="noreferrer" target="_blank"><i class="mdi mdi-github-circle"></i></a>
+      </div>
+      <div class="CardDiv">
+        <div data-aos="flip-up" class="card" id="BrowseLater">
+          <img
+            class="WorkImg"
+            src="/images/browselater.png"
+            alt="Browse Later extension"
+          />
+          <p class="AppName">Browse Later</p>
+          <p class="CardText">
+            Save links in this chrome extension to browse later and increase
+            your productivity
+          </p>
+          <a
+            class="icon GitIcon"
+            href="https://chrome.google.com/webstore/detail/browse-later/bcgkehdokpgflhkpfmoeihlndaklcbij/"
+            rel="noreferrer"
+            target="_blank"
+            ><i class="mdi mdi-link-variant"></i
+          ></a>
         </div>
         <div data-aos="flip-up" class="card">
-            <img class="WorkImg" src="/images/robofriends.png" alt="robofriends">
-            <p class="AppName">Robofriends</p>
-            <p class="CardText">React app I created learning React and API, it sends names and email from json file to a API which generates Robots.</p>
-            <a class="icon GitIcon"  href="https://github.com/dev-cj/robotfriends" rel="noreferrer" target="_blank"><i class="mdi mdi-github-circle"></i></a>           
+          <img
+            class="WorkImg"
+            src="/images/yourdayreact.png"
+            alt="Your day social media with reactjs"
+          />
+          <p class="AppName">My Day</p>
+          <p class="CardText">
+            How's your day going? Built on MERN Stack, Router, Redux, Realtime
+            changes with Socket io, Login with JWT.
+          </p>
+          <a
+            class="icon GitIcon"
+            href="http://yourdaymern.herokuapp.com/"
+            rel="noreferrer"
+            target="_blank"
+            ><i class="mdi mdi-link-variant"></i
+          ></a>
         </div>
         <div data-aos="flip-up" class="card">
-            <img class="WorkImg" src="/images/twitterclonevanilla.png" alt="twitter clone with vanilla javascript">
-            <p class="AppName">TwitterClone Vanilla JS</p>
-            <p class="CardText">App that I created to learn basics of javascript with jQuery</p>
-            <a class="icon GitIcon"  href="https://github.com/dev-cj/TwitterClone" rel="noreferrer" target="_blank"><i class="mdi mdi-github-circle"></i></a>           
+          <img
+            class="WorkImg"
+            src="/images/gradient.png"
+            alt="gradient generator"
+          />
+          <p class="AppName">CSS Gradient Generator</p>
+          <p class="CardText">
+            A gradient generator to generate random gradients and allow user to
+            copy css gradient code.
+          </p>
+          <a
+            class="icon GitIcon"
+            href="/pages/CSS Gradient Generator/gradient.html"
+            rel="noreferrer"
+            target="_blank"
+            ><i class="mdi mdi-link-variant"></i
+          ></a>
         </div>
+        <div data-aos="flip-up" class="card">
+          <img
+            class="WorkImg"
+            src="/images/jblpython.png"
+            alt="Python Track Price App"
+          />
+          <p class="AppName">Track Price App Python</p>
+          <p class="CardText">
+            This python script tracks product price and send email if price
+            falls down.
+          </p>
+          <a
+            class="icon GitIcon"
+            href="https://github.com/dev-cj/Track-price-app"
+            rel="noreferrer"
+            target="_blank"
+            ><i class="mdi mdi-github-circle"></i
+          ></a>
         </div>
+        <div data-aos="flip-up" class="card">
+          <img
+            class="WorkImg"
+            src="/images/robofriends.png"
+            alt="robofriends"
+          />
+          <p class="AppName">Robofriends</p>
+          <p class="CardText">
+            React app I created learning React and API, it sends names and email
+            from json file to a API which generates Robots.
+          </p>
+          <a
+            class="icon GitIcon"
+            href="https://github.com/dev-cj/robotfriends"
+            rel="noreferrer"
+            target="_blank"
+            ><i class="mdi mdi-github-circle"></i
+          ></a>
+        </div>
+        <div data-aos="flip-up" class="card">
+          <img
+            class="WorkImg"
+            src="/images/twitterclonevanilla.png"
+            alt="twitter clone with vanilla javascript"
+          />
+          <p class="AppName">TwitterClone Vanilla JS</p>
+          <p class="CardText">
+            App that I created to learn basics of javascript with jQuery
+          </p>
+          <a
+            class="icon GitIcon"
+            href="https://github.com/dev-cj/TwitterClone"
+            rel="noreferrer"
+            target="_blank"
+            ><i class="mdi mdi-github-circle"></i
+          ></a>
+        </div>
+      </div>
     </section>
     <!--Contact-->
     <section id="contact" style="padding-bottom:0%; margin-bottom: 0%;">
-        <div class="contacthead">
-            <h1 class="aboutheader" style="padding-bottom: 0; margin-bottom: 3%" data-aos="slide-right"
-                data-aos-duration="1000">Let's Get In Touch!</h1>
-            <div class="headerbar" data-aos="slide-left" data-aos-duration="1000"></div>
-        </div>
-        <p class="lead" style="color: #8f9494">
-            “If I had asked people what they wanted, they would have said faster horses. ”<br>- Henry Ford
-        </p>
-        <div class="hq">
-            Have a question or want to work together?<br>
-            Contact me from the links below and I will get back to you as soon as possible!
-        </div>
-
+      <div class="contacthead">
+        <h1
+          class="aboutheader"
+          style="padding-bottom: 0; margin-bottom: 3%"
+          data-aos="slide-right"
+          data-aos-duration="1000"
+        >
+          Let's Get In Touch!
+        </h1>
+        <div
+          class="headerbar"
+          data-aos="slide-left"
+          data-aos-duration="1000"
+        ></div>
+      </div>
+      <p class="lead" style="color: #8f9494">
+        “If I had asked people what they wanted, they would have said faster
+        horses. ”<br />- Henry Ford
+      </p>
+      <div class="hq">
+        Have a question or want to work together?<br />
+        Contact me from the links below and I will get back to you as soon as
+        possible!
+      </div>
     </section>
     <div class="footerdiv">
-        <footer class="footer">
-            <a href="#">
-                <i class="mdi mdi-chevron-double-up page-link"></i>
-            </a>            
-            <div data-aos="flip-up" class="iconflex">
-                <a href="https://www.linkedin.com/in/chamanjatoliya/" rel="noreferrer" target="_blank">
-                    <div class="flex icon md" id="icon-2">
-                        <i class="mdi mdi-linkedin"></i>
-                    </div>
-                </a>
-                <a href="https://instagram.com/dev.cj/" rel="noreferrer" target="_blank">
-                    <div class="flex icon md" id="icon-4">
-                        <i class="mdi mdi-instagram"></i>
-                    </div>
-                </a>
-                <a href="mailto:chamanjatoliya@gmail.com" target="_top">
-                    <div class="flex icon md" id="icon-3">
-                        <i class="mdi mdi-email-outline"></i>
-                    </div>
-                </a>
-                <a href="https://t.me/dev_cj" rel="noreferrer" target="_blank">
-                    <div class="flex icon md" id="icon-5">
-                        <i class="mdi mdi-telegram"></i>
-                    </div>
-                </a>
+      <footer class="footer">
+        <a href="#">
+          <i class="mdi mdi-chevron-double-up page-link"></i>
+        </a>
+        <div data-aos="flip-up" class="iconflex">
+          <a
+            href="https://www.linkedin.com/in/chamanjatoliya/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div class="flex icon md" id="icon-2">
+              <i class="mdi mdi-linkedin"></i>
             </div>
-        </footer>
-        <div class="info-box">
-            <div class="footnote">Built By &thinsp;<span class="highlight">CJ</span></div>
+          </a>
+          <a
+            href="https://instagram.com/dev.cj/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div class="flex icon md" id="icon-4">
+              <i class="mdi mdi-instagram"></i>
+            </div>
+          </a>
+          <a href="mailto:chamanjatoliya@gmail.com" target="_top">
+            <div class="flex icon md" id="icon-3">
+              <i class="mdi mdi-email-outline"></i>
+            </div>
+          </a>
+          <a href="https://t.me/dev_cj" rel="noreferrer" target="_blank">
+            <div class="flex icon md" id="icon-5">
+              <i class="mdi mdi-telegram"></i>
+            </div>
+          </a>
         </div>
+      </footer>
+      <div class="info-box">
+        <div class="footnote">
+          Built By &thinsp;<span class="highlight">CJ</span>
+        </div>
+      </div>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
-        AOS.init({
-            once: false,
-            mirror: true,
-        });
+      AOS.init()
+      AOS.init({
+        once: false,
+        mirror: true
+      })
     </script>
-</body>
+  </body>
 </html>
