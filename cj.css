@@ -102,8 +102,7 @@ body {
   padding: 0; */
   box-sizing: border-box;
 }
-
-nav {
+u nav {
   /* bottom: 0; */
   left: 0;
   height: 50px;
@@ -274,6 +273,9 @@ section:nth-of-type(1) .button:hover .mdi {
   font-family: Open sans, sans-serif;
   font-weight: 400;
   font-size: 1rem;
+}
+.textli > ul {
+  padding: initial;
 }
 .lighttext {
   color: #bfbfbf;
