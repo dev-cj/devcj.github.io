@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'Raleway';
-  src: url("/fonts/Raleway-Regular.ttf");
+  src: url('/fonts/Raleway-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Raleway-semibold';
-  src: url("/fonts/Raleway-SemiBold.ttf");
+  src: url('/fonts/Raleway-SemiBold.ttf');
 }
 
 @font-face {
   font-family: 'Raleway-bold';
-  src: url("/fonts/Raleway-Bold.ttf");
+  src: url('/fonts/Raleway-Bold.ttf');
 }
 
 @keyframes fadeIn {
@@ -24,12 +24,12 @@ html {
 a {
   text-decoration: none;
   color: inherit;
-  cursor: url(images/cursor-pointer.png),auto;
+  cursor: url(images/cursor-pointer.png), auto;
 }
 body {
   /* color: #fff; */
   /* font-family: 'Raleway'; */
-  cursor: url(images/cursor-auto.png),auto;
+  cursor: url(images/cursor-auto.png), auto;
   text-align: center;
   margin: 0px;
   /* font-size: 8pt; */
@@ -37,7 +37,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
-.rl{
+.rl {
   font-family: 'Raleway';
   margin-top: 4%;
 }
@@ -61,13 +61,13 @@ body {
   box-sizing: inherit;
   display: inline-block;
   font-size: 13pt;
-  transition: all .5s;
-  cursor: url(images/cursor-pointer.png),auto;
+  transition: all 0.5s;
+  cursor: url(images/cursor-pointer.png), auto;
 }
 
 .button:hover {
-  background-color: #04C2C9;
-  border-color: #04C2C9;
+  background-color: #04c2c9;
+  border-color: #04c2c9;
 }
 
 .button .mdi {
@@ -94,7 +94,7 @@ body {
 }
 
 .highlight {
-  color: #E31B6D;
+  color: #e31b6d;
 }
 
 * {
@@ -108,15 +108,15 @@ nav {
   left: 0;
   height: 50px;
   width: 100%;
-  background: #1B242F;
-  border-bottom: 3px solid #04C2C9;
+  background: #1b242f;
+  border-bottom: 3px solid #04c2c9;
   z-index: 100;
   top: 0;
   position: sticky;
 }
 
 nav.fixed.desk {
-  animation: popDown .5s;
+  animation: popDown 0.5s;
 }
 
 section {
@@ -125,7 +125,7 @@ section {
   /* line-height: 11pt; */
   position: relative;
 }
-#work{
+#work {
   padding: 0px;
 }
 section:nth-of-type(1) {
@@ -153,7 +153,7 @@ section:nth-of-type(1) .button {
 }
 
 section:nth-of-type(1) .button .mdi {
-  transition: transform .3s;
+  transition: transform 0.3s;
   position: absolute;
   right: 15px;
   top: 11px;
@@ -162,8 +162,6 @@ section:nth-of-type(1) .button .mdi {
 section:nth-of-type(1) .button:hover .mdi {
   transform: rotate(90deg);
 }
-
-
 
 @media screen and (min-width: 600px) {
   body {
@@ -207,19 +205,19 @@ section:nth-of-type(1) .button:hover .mdi {
   height: 100%;
   overflow: hidden;
 }
-.navlogo{
+.navlogo {
   height: 44px;
   padding-bottom: 0;
 }
-#about{   
-    height: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-bottom: 4%;
+#about {
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 4%;
 }
-#skills{
+#skills {
   position: relative;
   padding-top: 0;
 }
@@ -232,18 +230,18 @@ section:nth-of-type(1) .button:hover .mdi {
 .container {
   flex: 50%;
 }
-.aboutheader{
+.aboutheader {
   padding-bottom: 9%;
   margin-bottom: 10%;
   font-size: 45pt;
   /* font-size: 54px; */
   font-weight: 300;
-  color: #22A39F;
+  color: #22a39f;
   font-family: 'Raleway-Bold';
   font-family: 'Open sans';
   /* text-transform: uppercase; */
 }
-.aboutsec{
+.aboutsec {
   display: inline-block;
   position: relative;
   margin: 0 0 0px 0;
@@ -252,12 +250,12 @@ section:nth-of-type(1) .button:hover .mdi {
   padding-bottom: 0%;
 }
 
-.headerbar{
+.headerbar {
   width: 8rem;
   margin: auto;
   height: 2px;
   background: #6e6e6e;
-  transform: translate(-50%);  
+  transform: translate(-50%);
 }
 
 .profilepic {
@@ -267,7 +265,7 @@ section:nth-of-type(1) .button:hover .mdi {
   border-radius: 70%;
   box-shadow: 0 0 14px 0px #1b242f;
 }
-.textli{
+.textli {
   text-align: left;
   padding-top: 0%;
   padding-right: 10%;
@@ -277,11 +275,11 @@ section:nth-of-type(1) .button:hover .mdi {
   font-weight: 400;
   font-size: 1rem;
 }
-.lighttext{
+.lighttext {
   color: #bfbfbf;
 }
 
-.listskills{
+.listskills {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -292,7 +290,7 @@ section:nth-of-type(1) .button:hover .mdi {
   list-style: none;
   padding: 0;
 }
-.list{
+.list {
   padding: 20px 30px 30px 30px;
   display: flex;
   flex-wrap: wrap;
@@ -302,52 +300,57 @@ section:nth-of-type(1) .button:hover .mdi {
   text-align: center;
 }
 
-.icon{
+.icon {
   width: 80px;
   margin: 0 auto;
 }
-.sp{
+.sp {
   margin-top: 0;
   margin-bottom: 0;
 }
-.aoslist{
+.aoslist {
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: flex-end;
 }
-.ability-score{
+.ability-score {
   margin-top: 15px;
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-.adesk{
-  color: #22A39F;
-  font-family:'Muli', sans-serif;
+.adesk {
+  color: #22a39f;
+  font-family: 'Muli', sans-serif;
   border: none;
   font-size: 1.2rem;
   font-weight: 300;
   text-decoration: none;
-  border-bottom: 2px #58DBE7 solid;
+  border-bottom: 2px #58dbe7 solid;
   transition: 0.3s;
   /* -webkit-backface-visibility: hidden; */
   outline: none;
   margin-top: 5px;
 }
 .adesk:hover,
-.adesk:active{
-   background-color: #58DBE7;
-   color: #fff;
-   /* -webkit-backface-visibility: hidden; */
-} 
+.adesk:active {
+  background-color: #58dbe7;
+  color: #fff;
+  /* -webkit-backface-visibility: hidden; */
+}
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url(../fonts/glyphicons-halflings-regular.eot);
-  src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+  src: url(../fonts/glyphicons-halflings-regular.eot?#iefix)
+      format('embedded-opentype'),
+    url(../fonts/glyphicons-halflings-regular.woff) format('woff'),
+    url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),
+    url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular)
+      format('svg');
 }
 
 .glyphicon {
-  color: #DFE0E0;
+  color: #dfe0e0;
   position: relative;
   top: 1px;
   display: inline-block;
@@ -359,14 +362,14 @@ section:nth-of-type(1) .button:hover .mdi {
   -moz-osx-font-smoothing: grayscale;
 }
 .glyphicon-star:before {
-  content: "\e006"
+  content: '\e006';
 }
 
 .glyphicon-star-empty:before {
-  content: "\e007"
+  content: '\e007';
 }
-.glyphicon.filled{
-  color: #22A39F;
+.glyphicon.filled {
+  color: #22a39f;
 }
 @media screen and (max-width: 700px) {
   .flexabout {
@@ -374,18 +377,18 @@ section:nth-of-type(1) .button:hover .mdi {
   }
 }
 
-#skills{
+#skills {
   padding-bottom: 0%;
 }
-.lead{
+.lead {
   margin-bottom: 20px;
-   font-size: 21px;
-   font-weight: 300;
-   line-height: 1.4;
-   color: #727878;
-   font-family: 'Open Sans', sans-serif !important;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #727878;
+  font-family: 'Open Sans', sans-serif !important;
 }
-#work{
+#work {
   background: #f1f1ef;
   height: 100vh;
 }
@@ -395,9 +398,8 @@ section:nth-of-type(1) .button:hover .mdi {
   justify-content: center;
   margin: 0 auto;
   position: absolute;
-  bottom: .1rem;
+  bottom: 0.1rem;
   justify-items: center;
-
 }
 .Button {
   width: 12rem;
@@ -405,46 +407,45 @@ section:nth-of-type(1) .button:hover .mdi {
   padding: 4px;
   /* margin: 8rem 0 0 0; */
   background: transparent;
-  color: #58DBE7;
+  color: #58dbe7;
   font-family: 'Titillium Web', sans-serif;
   border: none;
   font-size: 1.8rem;
   font-weight: 600;
   text-decoration: none;
-  border-bottom: 2px #58DBE7 solid;
+  border-bottom: 2px #58dbe7 solid;
   cursor: pointer;
   transition: 0.3s;
   /* -webkit-backface-visibility: hidden; */
   outline: none;
   margin-top: 100px;
-
 }
 
 .Button:hover,
 .Button:active {
-  background-color: #58DBE7;
+  background-color: #58dbe7;
   color: #fff;
   /* -webkit-backface-visibility: hidden; */
-} 
-#work{
+}
+#work {
   padding-bottom: 0;
 }
 /* contact */
-#contact{
+#contact {
   height: 70vh;
   background: #252934;
 }
-.no-bullets{
+.no-bullets {
   list-style: none;
 }
-.iconflex{
+.iconflex {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 footer {
-  background: #1B242F;
+  background: #1b242f;
   padding: 70px 0 50px 0;
   position: relative;
 }
@@ -455,17 +456,16 @@ footer {
   position: relative;
   text-align: center;
   margin: 0 15px;
-  background: #262F38;
+  background: #262f38;
   font-size: 18pt;
 }
 .footer .iconflex .icon:hover {
-  background: #04C2C9;
-  
+  background: #04c2c9;
 }
 footer .mdi-chevron-double-up {
   position: absolute;
   top: -25px;
-  background: #E31B6D;
+  background: #e31b6d;
   font-size: 30pt;
   width: 47px;
   height: 50px;
@@ -473,8 +473,8 @@ footer .mdi-chevron-double-up {
   left: 0;
   right: 0;
   margin: 0 auto;
-  cursor: url(images/cursor-pointer.png),auto;
-  transition: ease .5s;
+  cursor: url(images/cursor-pointer.png), auto;
+  transition: ease 0.5s;
 }
 .mdi-chevron-double-up:before {
   color: white;
@@ -486,24 +486,25 @@ footer .mdi-chevron-double-up:hover {
 .icon:hover {
   box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
   transform: scale(0.9);
-  transition: background-color, 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
-    transition-property: background-color, color, box-shadow, transform;
-    transition-duration: 0.3s, 0.3s, 0.3s, 0.3s;
-    transition-timing-function: ease, ease, ease, ease;
-    transition-delay: 0s, 0s, 0s, 0s;
+  transition: background-color, 0.3s, color 0.3s, box-shadow 0.3s,
+    transform 0.3s;
+  transition-property: background-color, color, box-shadow, transform;
+  transition-duration: 0.3s, 0.3s, 0.3s, 0.3s;
+  transition-timing-function: ease, ease, ease, ease;
+  transition-delay: 0s, 0s, 0s, 0s;
 }
-.icon{
+.icon {
   color: #fff;
 }
-.info-box{
-  background: #1B242F;
+.info-box {
+  background: #1b242f;
   font-family: 'Raleway-semibold';
 }
-.footnote{
+.footnote {
   color: #fff;
   position: inherit;
 }
-.hq{
+.hq {
   margin-top: 5%;
   margin-left: 6%;
   margin-right: 6%;
@@ -515,10 +516,10 @@ footer .mdi-chevron-double-up:hover {
   margin-top: rem;
   font-weight: 700;
   font-size: 1rem;
-  color: #58DBE7;
+  color: #58dbe7;
 }
 .paragraphAbout {
-  font-size: .7rem;
+  font-size: 0.7rem;
   margin: 2rem;
   text-align: left;
   font-weight: 500;
@@ -526,7 +527,7 @@ footer .mdi-chevron-double-up:hover {
 }
 
 /* cards css */
-.CardDiv{
+.CardDiv {
   display: flex;
   align-items: center;
   position: relative;
@@ -535,8 +536,8 @@ footer .mdi-chevron-double-up:hover {
   margin: 0 14rem;
   overflow-x: auto;
   padding-bottom: 10px;
-  }
-.card{
+}
+.card {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 14px 20px 1px #515151d1;
@@ -553,42 +554,42 @@ footer .mdi-chevron-double-up:hover {
 }
 
 @media (max-width: 767px) {
-.CardDiv{
-  margin-left: 7%;
-  margin-right: 7%;
-  padding: 0;
+  .CardDiv {
+    margin-left: 7%;
+    margin-right: 7%;
+    padding: 0;
+  }
+  .card {
+    margin: 3%;
+  }
 }
-.card{
-  margin: 3%;
-}
-}
-.WorkImg{
+.WorkImg {
   max-width: 100%;
   border-radius: 8px;
 }
-.AppName{
+.AppName {
   font-family: 'Raleway-bold';
   color: #4bc0ce;
   font-size: 1rem;
   margin-bottom: 0;
 }
-.CardText{
+.CardText {
   font-family: Open sans;
   color: #fff;
   margin: 2% 5%;
 }
-.GitIcon{
+.GitIcon {
   font-size: 2rem;
   margin-top: auto;
   margin-bottom: 7%;
 }
-.GitIcon>i:hover{
+.GitIcon > i:hover {
   border: 2px solid #68c1ce;
   border-radius: 22px;
   padding: 2px;
   box-shadow: 0 0 24px 9px #78dce8;
 }
-.GitIcon>i{
+.GitIcon > i {
   border: 2px solid #68c1ce;
   border-radius: 22px;
   padding: 2px;
@@ -597,30 +598,30 @@ footer .mdi-chevron-double-up:hover {
   width: 0.6rem;
   height: 0.6rem;
 }
-  
+
 .CardDiv::-webkit-scrollbar-track {
   box-shadow: inset 0 0 10px rgb(86, 216, 228);
   border-radius: 10px;
 }
-  
+
 .CardDiv::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: #78dce8; 
+  background: #78dce8;
   /* box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
 }
-@media (max-width: 767px){
-  .CardText{
+@media (max-width: 767px) {
+  .CardText {
     font-size: 1.2rem;
   }
-  .AppName{
+  .AppName {
     font-size: 1rem;
   }
-  .GitIcon{
+  .GitIcon {
     font-size: 2rem;
     margin-bottom: 3%;
   }
-  .card{
-    padding: 0px; 
+  .card {
+    padding: 0px;
     padding-bottom: 0;
   }
 }
@@ -629,5 +630,20 @@ footer .mdi-chevron-double-up:hover {
   color: #1b242f;
 }
 .mern::first-letter {
-  color: #E31B6D;
+  color: #e31b6d;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #6e6e6e;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: #6e6e6e;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e31b6d;
 }
