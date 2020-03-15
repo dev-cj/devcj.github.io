@@ -1,4 +1,8 @@
 // Sending request to Your Day to start server
-fetch('https://yourdaymern.herokuapp.com/')
-  .then(res => res)
-  .catch(err => err)
+
+;(() => {
+  fetch('https://bit.ly/fullstackYourDay/')
+  setTimeout(() => {
+    console.clear()
+  }, 1000)
+})()
