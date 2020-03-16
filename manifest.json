@@ -5,7 +5,7 @@
   "background_color": "#1b242f",
   "display": "standalone",
   "Scope": "/",
-  "start_url": "https://devcj.in/",
+  "start_url": "/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
