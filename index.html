@@ -40,10 +40,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
+    <meta name="theme-color" content="#e31b6d" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="manifest.json" />
     <link
       href="https://cdn.materialdesignicons.com/3.8.95/css/materialdesignicons.min.css"
       media="all"
@@ -821,5 +822,14 @@
       })
     </script>
     <script src="/js/cj.js"></script>
+    <script>
+      if (!navigator.serviceWorker.controller) {
+        navigator.serviceWorker.register('/sw.js').then(function(reg) {
+          console.log(
+            'Service worker has been registered for scope: ' + reg.scope
+          )
+        })
+      }
+    </script>
   </body>
 </html>
