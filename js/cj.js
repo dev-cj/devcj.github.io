@@ -3,6 +3,6 @@
 ;(() => {
   fetch('https://bit.ly/fullstackYourDay/')
   setTimeout(() => {
-    // console.clear()
+    console.clear()
   }, 1000)
 })()
