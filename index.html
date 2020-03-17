@@ -832,13 +832,15 @@
                 type: 'CACHE_URLS',
                 payload: [
                   location.href,
-                  ...performance.getEntriesByType('resource').map(r => {
-                    if (r.name != 'https://devcj.in/js/cj.js') return r.name
-                  })
+                  ...performance
+                    .getEntriesByType('resource')
+                    .filter(r => r.name != 'https://devcj.in/js/cj.js')
+                    .map(r => r.name)
                 ]
               }
               console.log('data :', data)
-              registration.installing.postMessage(data)
+              registration.active.postMessage(data)
+              console.log('registration :', registration)
             },
             error => {
               console.log(`ServiceWorker registration failed: ${error}`)
