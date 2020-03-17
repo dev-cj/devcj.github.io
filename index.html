@@ -824,28 +824,26 @@
     <script src="/js/cj.js"></script>
     <script>
       if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker
-            .register('./service-worker.js', { scope: '/' })
-            .then(
-              registration => {
-                const data = {
-                  type: 'CACHE_URLS',
-                  payload: [
-                    location.href,
-                    ...performance.getEntriesByType('resource').map(r => r.name)
-                  ]
-                }
-                registration.installing.postMessage(data)
-                console.log(
-                  `ServiceWorker registration successful with scope: ${registration.scope}`
-                )
-              },
-              error => {
-                console.log(`ServiceWorker registration failed: ${error}`)
+        navigator.serviceWorker
+          .register('/service-worker.js', { scope: '/' })
+          .then(
+            registration => {
+              const data = {
+                type: 'CACHE_URLS',
+                payload: [
+                  location.href,
+                  ...performance.getEntriesByType('resource').map(r => {
+                    if (r.name != 'https://devcj.in/js/cj.js') return r.name
+                  })
+                ]
               }
-            )
-        })
+              console.log('data :', data)
+              registration.installing.postMessage(data)
+            },
+            error => {
+              console.log(`ServiceWorker registration failed: ${error}`)
+            }
+          )
       }
     </script>
   </body>
