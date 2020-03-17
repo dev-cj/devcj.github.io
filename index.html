@@ -824,28 +824,30 @@
     <script src="/js/cj.js"></script>
     <script>
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker
-          .register('/service-worker.js', { scope: '/' })
-          .then(
-            registration => {
-              const data = {
-                type: 'CACHE_URLS',
-                payload: [
-                  location.href,
-                  ...performance
-                    .getEntriesByType('resource')
-                    .filter(r => r.name != 'https://devcj.in/js/cj.js')
-                    .map(r => r.name)
-                ]
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register('/service-worker.js', { scope: '/' })
+            .then(
+              registration => {
+                const data = {
+                  type: 'CACHE_URLS',
+                  payload: [
+                    location.href,
+                    ...performance
+                      .getEntriesByType('resource')
+                      .filter(r => r.name != 'https://devcj.in/js/cj.js')
+                      .map(r => r.name)
+                  ]
+                }
+                console.log('data :', data)
+                registration.active.postMessage(data)
+                console.log('registration :', registration)
+              },
+              error => {
+                console.log(`ServiceWorker registration failed: ${error}`)
               }
-              console.log('data :', data)
-              registration.active.postMessage(data)
-              console.log('registration :', registration)
-            },
-            error => {
-              console.log(`ServiceWorker registration failed: ${error}`)
-            }
-          )
+            )
+        })
       }
     </script>
   </body>
