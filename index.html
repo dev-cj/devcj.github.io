@@ -839,9 +839,7 @@
                       .map(r => r.name)
                   ]
                 }
-                console.log('data :', data)
                 registration.active.postMessage(data)
-                console.log('registration :', registration)
               },
               error => {
                 console.log(`ServiceWorker registration failed: ${error}`)
