@@ -649,3 +649,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: #e31b6d;
 }
+
+.flexLast {
+  margin: auto;
+}
