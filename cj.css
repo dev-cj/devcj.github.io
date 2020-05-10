@@ -576,7 +576,7 @@ footer .mdi-chevron-double-up:hover {
   margin-bottom: 0;
 }
 .CardText {
-  font-family: Open sans;
+  font-family: Lato;
   color: #fff;
   margin: 2% 5%;
 }
@@ -613,7 +613,7 @@ footer .mdi-chevron-double-up:hover {
 }
 @media (max-width: 767px) {
   .CardText {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .AppName {
     font-size: 1rem;
