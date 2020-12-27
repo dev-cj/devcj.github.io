@@ -209,21 +209,31 @@ section:nth-of-type(1) .button:hover .mdi {
   padding-bottom: 0;
 }
 #about {
+  min-height: 95vh;
   height: 100%;
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   padding-bottom: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #skills {
+  min-height: 95vh;
   position: relative;
   padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .flexabout {
   display: flex;
   flex-wrap: wrap;
   padding: 0 10% 0 10%;
+  width: 100%;
 }
 
 .container {
@@ -392,9 +402,20 @@ section:nth-of-type(1) .button:hover .mdi {
 }
 #work {
   background: #f1f1ef;
-  height: 100vh;
+  min-height: 97vh;
+  position: relative;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
+.workTop {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
 .Buttons {
   display: flex;
   justify-content: center;
@@ -527,15 +548,44 @@ footer .mdi-chevron-double-up:hover {
   font-weight: 500;
   color: #333;
 }
-
+.articlesHeading {
+  margin-bottom: 4%;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #22a39f;
+  font-family: 'Raleway-Bold';
+}
+.workBottom {
+  flex: 6;
+  display: flex;
+  align-items: center;
+}
+#dev_widget {
+  display: unset;
+}
+.articlesDiv {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 /* cards css */
+.cards {
+  flex: 6;
+  display: flex;
+  align-items: center;
+  width: 73%;
+}
 .CardDiv {
+  /* flex: 6; */
   display: flex;
   align-items: center;
   position: relative;
   justify-content: unset;
   overflow: auto;
-  margin: 0 14rem;
+  margin: 0 7rem;
+  margin-left: 1rem;
   overflow-x: auto;
   padding-bottom: 10px;
 }
@@ -552,7 +602,8 @@ footer .mdi-chevron-double-up:hover {
   border-radius: 1.3rem;
   /* border: 2px solid white; */
   padding: 14px;
-  padding-bottom: 0;
+  /* padding-bottom: 1rem; */
+  max-height: 550px;
 }
 
 @media (max-width: 767px) {
@@ -563,6 +614,13 @@ footer .mdi-chevron-double-up:hover {
   }
   .card {
     margin: 3%;
+  }
+  .workBottom {
+    flex-direction: column;
+  }
+  .cards {
+    margin: 2rem 0;
+    width: 100%;
   }
 }
 .WorkImg {
@@ -651,5 +709,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .flexLast {
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: 1rem;
 }

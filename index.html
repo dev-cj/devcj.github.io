@@ -252,25 +252,6 @@
           </div>
           <div data-aos="flip-up" data-aos-duration="1000">
             <li class="list">
-              <img class="icon" src="/images/logos/jquery.svg" alt="jquery" />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-              <a
-                class="adesk"
-                href="https://jquery.com/"
-                rel="noreferrer"
-                target="_blank"
-                >jQuery</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
               <img
                 class="icon"
                 src="/images/logos/mongodb.svg"
@@ -402,10 +383,29 @@
           </div>
           <div data-aos="flip-up" data-aos-duration="1000">
             <li class="list">
+              <img class="icon" src="/images/logos/mui.svg" alt="material ui" />
+              <span class="ability-score">
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star filled"></span>
+                <span class="glyphicon glyphicon-star"></span>
+              </span>
+              <a
+                class="adesk"
+                href="https://material-ui.com/"
+                rel="noreferrer"
+                target="_blank"
+                >Material UI</a
+              >
+            </li>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1000">
+            <li class="list">
               <img
                 class="icon"
-                src="/images/logos/materialize.svg"
-                alt="bootstrap"
+                src="/images/logos/chakraUi.svg"
+                alt="chakra ui"
               />
               <span class="ability-score">
                 <span class="glyphicon glyphicon-star filled"></span>
@@ -416,10 +416,10 @@
               </span>
               <a
                 class="adesk"
-                href="https://materializecss.com/"
+                href="https://chakra-ui.com/"
                 rel="noreferrer"
                 target="_blank"
-                >Materialize CSS</a
+                >Chakra UI</a
               >
             </li>
           </div>
@@ -613,7 +613,7 @@
     </section>
     <!--work-->
     <section id="work">
-      <div>
+      <div class="workTop">
         <div class="aboutsec">
           <h1
             class="aboutheader"
@@ -632,156 +632,182 @@
           “You can do anything you set your mind to.”<br />- Benjamin Franklin
         </p>
       </div>
-      <div class="CardDiv">
-        <div data-aos="flip-up" class="card" id="covid19">
-          <img
-            class="WorkImg"
-            src="/images/covidV.png"
-            alt="Covid Visualizer"
-          />
-          <p class="AppName">Covid-19 Visualizer</p>
-          <p class="CardText">
-            Visualize corona stats from around the world with downloadable
-            charts to use in projects/research.
-          </p>
-          <div class="flexLast">
-            <a
-              class="icon GitIcon"
-              href="https://dev-cj.github.io/visualize-corona"
-              rel="noreferrer"
-              target="_blank"
-              ><i class="mdi mdi-link-variant"></i
-            ></a>
-            <a
-              class="icon GitIcon"
-              href="https://github.com/dev-cj/visualize-corona/"
-              rel="noreferrer"
-              target="_blank"
-              ><i class="mdi mdi-github-circle"></i
-            ></a>
+      <div class="workBottom">
+        <div class="articlesDiv">
+          <h2 class="articlesHeading aos-init aos-animate">Articles</h2>
+          <dev-widget
+            id="dev_widget"
+            data-username="devcj_in"
+            data-theme="cobalt2"
+            data-sortby="reactions"
+            data-limit="30"
+            data-width="80%"
+            data-contentheight="auto"
+          ></dev-widget>
+        </div>
+        <div class="cards">
+          <div class="CardDiv">
+            <div data-aos="flip-up" class="card" id="covid19">
+              <img
+                class="WorkImg"
+                src="/images/covidV.png"
+                alt="Covid Visualizer"
+              />
+              <p class="AppName">Covid-19 Visualizer</p>
+              <p class="CardText">
+                Visualize corona stats from around the world with downloadable
+                charts to use in projects/research.
+              </p>
+              <div class="flexLast">
+                <a
+                  class="icon GitIcon"
+                  href="https://dev-cj.github.io/visualize-corona"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><i class="mdi mdi-link-variant"></i
+                ></a>
+                <a
+                  class="icon GitIcon"
+                  href="https://github.com/dev-cj/visualize-corona/"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><i class="mdi mdi-github-circle"></i
+                ></a>
+              </div>
+            </div>
+            <div data-aos="flip-up" class="card" id="BrowseLater">
+              <img
+                class="WorkImg"
+                src="/images/browselater.png"
+                alt="Browse Later extension"
+              />
+              <p class="AppName">Browse Later</p>
+              <p class="CardText">
+                Save links in this chrome extension to browse later and increase
+                your productivity
+              </p>
+              <div class="flexLast">
+                <a
+                  class="icon GitIcon"
+                  href="https://chrome.google.com/webstore/detail/browse-later/bcgkehdokpgflhkpfmoeihlndaklcbij/"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><i class="mdi mdi-link-variant"></i
+                ></a>
+                <a
+                  class="icon GitIcon"
+                  href="https://github.com/dev-cj/Browse-Later"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><i class="mdi mdi-github-circle"></i
+                ></a>
+              </div>
+            </div>
+            <div data-aos="flip-up" class="card">
+              <img
+                class="WorkImg"
+                src="/images/yourdayreact.png"
+                alt="Your day social media with reactjs"
+              />
+              <p class="AppName">My Day</p>
+              <p class="CardText">
+                How's your day going? Built on MERN Stack, Router, Redux,
+                Realtime changes with Socket io, Login with JWT.
+              </p>
+              <div class="flexLast">
+                <a
+                  class="icon GitIcon"
+                  href="http://yourdaymern.herokuapp.com/"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><i class="mdi mdi-link-variant"></i
+                ></a>
+              </div>
+            </div>
+            <div data-aos="flip-up" class="card">
+              <img
+                class="WorkImg"
+                src="/images/gradient.png"
+                alt="gradient generator"
+              />
+              <p class="AppName">CSS Gradient Generator</p>
+              <p class="CardText">
+                A gradient generator to generate random gradients and allow user
+                to copy css gradient code.
+              </p>
+              <div class="flexLast">
+                <a
+                  class="icon GitIcon"
+                  href="/pages/CSS Gradient Generator/gradient.html"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><i class="mdi mdi-link-variant"></i
+                ></a>
+              </div>
+            </div>
+            <div data-aos="flip-up" class="card">
+              <img
+                class="WorkImg"
+                src="/images/jblpython.png"
+                alt="Python Track Price App"
+              />
+              <p class="AppName">Track Price App Python</p>
+              <p class="CardText">
+                This python script tracks product price and send email if price
+                falls down.
+              </p>
+              <div class="flexLast">
+                <a
+                  class="icon GitIcon"
+                  href="https://github.com/dev-cj/Track-price-app"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><i class="mdi mdi-github-circle"></i
+                ></a>
+              </div>
+            </div>
+            <div data-aos="flip-up" class="card">
+              <img
+                class="WorkImg"
+                src="/images/robofriends.png"
+                alt="robofriends"
+              />
+              <p class="AppName">Robofriends</p>
+              <p class="CardText">
+                React app I created learning React and API, it sends names and
+                email from json file to a API which generates Robots.
+              </p>
+              <div class="flexLast">
+                <a
+                  class="icon GitIcon"
+                  href="https://github.com/dev-cj/robotfriends"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><i class="mdi mdi-github-circle"></i
+                ></a>
+              </div>
+            </div>
+            <div data-aos="flip-up" class="card">
+              <img
+                class="WorkImg"
+                src="/images/twitterclonevanilla.png"
+                alt="twitter clone with vanilla javascript"
+              />
+              <p class="AppName">TwitterClone Vanilla JS</p>
+              <p class="CardText">
+                App that I created to learn basics of javascript with jQuery
+              </p>
+              <div class="flexLast">
+                <a
+                  class="icon GitIcon"
+                  href="https://github.com/dev-cj/TwitterClone"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><i class="mdi mdi-github-circle"></i
+                ></a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div data-aos="flip-up" class="card" id="BrowseLater">
-          <img
-            class="WorkImg"
-            src="/images/browselater.png"
-            alt="Browse Later extension"
-          />
-          <p class="AppName">Browse Later</p>
-          <p class="CardText">
-            Save links in this chrome extension to browse later and increase
-            your productivity
-          </p>
-          <div class="flexLast">
-            <a
-              class="icon GitIcon"
-              href="https://chrome.google.com/webstore/detail/browse-later/bcgkehdokpgflhkpfmoeihlndaklcbij/"
-              rel="noreferrer"
-              target="_blank"
-              ><i class="mdi mdi-link-variant"></i
-            ></a>
-            <a
-              class="icon GitIcon"
-              href="https://github.com/dev-cj/Browse-Later"
-              rel="noreferrer"
-              target="_blank"
-              ><i class="mdi mdi-github-circle"></i
-            ></a>
-          </div>
-        </div>
-        <div data-aos="flip-up" class="card">
-          <img
-            class="WorkImg"
-            src="/images/yourdayreact.png"
-            alt="Your day social media with reactjs"
-          />
-          <p class="AppName">My Day</p>
-          <p class="CardText">
-            How's your day going? Built on MERN Stack, Router, Redux, Realtime
-            changes with Socket io, Login with JWT.
-          </p>
-          <a
-            class="icon GitIcon"
-            href="http://yourdaymern.herokuapp.com/"
-            rel="noreferrer"
-            target="_blank"
-            ><i class="mdi mdi-link-variant"></i
-          ></a>
-        </div>
-        <div data-aos="flip-up" class="card">
-          <img
-            class="WorkImg"
-            src="/images/gradient.png"
-            alt="gradient generator"
-          />
-          <p class="AppName">CSS Gradient Generator</p>
-          <p class="CardText">
-            A gradient generator to generate random gradients and allow user to
-            copy css gradient code.
-          </p>
-          <a
-            class="icon GitIcon"
-            href="/pages/CSS Gradient Generator/gradient.html"
-            rel="noreferrer"
-            target="_blank"
-            ><i class="mdi mdi-link-variant"></i
-          ></a>
-        </div>
-        <div data-aos="flip-up" class="card">
-          <img
-            class="WorkImg"
-            src="/images/jblpython.png"
-            alt="Python Track Price App"
-          />
-          <p class="AppName">Track Price App Python</p>
-          <p class="CardText">
-            This python script tracks product price and send email if price
-            falls down.
-          </p>
-          <a
-            class="icon GitIcon"
-            href="https://github.com/dev-cj/Track-price-app"
-            rel="noreferrer"
-            target="_blank"
-            ><i class="mdi mdi-github-circle"></i
-          ></a>
-        </div>
-        <div data-aos="flip-up" class="card">
-          <img
-            class="WorkImg"
-            src="/images/robofriends.png"
-            alt="robofriends"
-          />
-          <p class="AppName">Robofriends</p>
-          <p class="CardText">
-            React app I created learning React and API, it sends names and email
-            from json file to a API which generates Robots.
-          </p>
-          <a
-            class="icon GitIcon"
-            href="https://github.com/dev-cj/robotfriends"
-            rel="noreferrer"
-            target="_blank"
-            ><i class="mdi mdi-github-circle"></i
-          ></a>
-        </div>
-        <div data-aos="flip-up" class="card">
-          <img
-            class="WorkImg"
-            src="/images/twitterclonevanilla.png"
-            alt="twitter clone with vanilla javascript"
-          />
-          <p class="AppName">TwitterClone Vanilla JS</p>
-          <p class="CardText">
-            App that I created to learn basics of javascript with jQuery
-          </p>
-          <a
-            class="icon GitIcon"
-            href="https://github.com/dev-cj/TwitterClone"
-            rel="noreferrer"
-            target="_blank"
-            ><i class="mdi mdi-github-circle"></i
-          ></a>
         </div>
       </div>
     </section>
@@ -889,5 +915,9 @@
         })
       }
     </script>
+    <script
+      src="https://unpkg.com/dev-widget@^1/dist/card.component.min.mjs"
+      type="module"
+    ></script>
   </body>
 </html>
