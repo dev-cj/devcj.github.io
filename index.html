@@ -6,7 +6,7 @@
     <meta name="title" content="DevCJ" />
     <meta
       name="description"
-      content="A self-taught web developer and technology freak, Contact me If you want to work together."
+      content="A self-taught software engineer and technology freak, Contact me If you want to work together."
     />
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -52,9 +52,16 @@
     />
     <script src="/js/demo.js"></script>
     <script src="/js/jquery.particlebackground.js"></script>
+    <script src="/js/flickity.min.js"></script>
     <!--Aos css-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="cj.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="flickity.min.css"
+    />
     <script type="text/javascript">
       ;(window.heap = window.heap || []),
         (heap.load = function (e, t) {
@@ -108,7 +115,7 @@
         <div class="text">
           Hello World, I'm <span class="highlight">CJ</span>.
           <br />
-          I'm a Full-Stack JavaScript Developer.
+          I'm a Software Engineer.
         </div>
         <a href="#about">
           <div class="button page-link" dest="about">
@@ -144,7 +151,7 @@
           data-aos-duration="1000"
         >
           <ul>
-            Hi, My name is Chaman Jatoliya, a Passionate &
+            Hi, My name is Chaman (CJ) Jatoliya, a Passionate &
             <br />
             Self-Taught<span class="lighttext"
               >(with the help of THE Internet:)</span
@@ -164,7 +171,7 @@
             I am a bit of a gym freak.
           </ul>
           <ul>
-            I worship Internet and Elon Musk.
+            I worship Internet and Music.
           </ul>
         </div>
         <div class="container" data-aos="slide-left" data-aos-duration="1000">
@@ -187,428 +194,258 @@
       <p class="lead">
         “Life without knowledge is death in disguise.”<br />- Talib Kweli
       </p>
-      <div>
-        <ul class="listskills">
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
-              <img class="icon" src="/images/logos/html5.svg" alt="html5" />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-              </span>
-              <a
-                class="adesk"
-                href="https://developer.mozilla.org/en-US/docs/Learn/HTML"
-                rel="noreferrer"
-                target="_blank"
-                >Html5</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
-              <img class="icon" src="/images/logos/css3.svg" alt="css3" />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-              <a
-                class="adesk"
-                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"
-                rel="noreferrer"
-                target="_blank"
-                >CSS3</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
-              <img
-                class="icon"
-                src="/images/logos/javascript.svg"
-                alt="vanilla javascript"
-              />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-              <a
-                class="adesk"
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                rel="noreferrer"
-                target="_blank"
-                >Javascript</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
-              <img
-                class="icon"
-                src="/images/logos/mongodb.svg"
-                alt="react js"
-              />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span> </span
-              ><a
-                class="adesk mern"
-                href="https://mongodb.com/"
-                rel="noreferrer"
-                target="_blank"
-                >MongoDB</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
-              <img
-                class="icon"
-                src="/images/logos/expressjs.svg"
-                alt="react js"
-              />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span> </span
-              ><a
-                class="adesk mern"
-                href="https://expressjs.com/"
-                rel="noreferrer"
-                target="_blank"
-                >ExpressJS</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
-              <img class="icon" src="/images/logos/react.svg" alt="react js" />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span> </span
-              ><a
-                class="adesk mern"
-                href="https://reactjs.org/"
-                rel="noreferrer"
-                target="_blank"
-                >ReactJS</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000" class="aoslist">
-            <li class="list">
-              <img
-                class="icon sp"
-                src="/images/logos/nodejs.svg"
-                alt="node js"
-              />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-              <a
-                class="adesk mern"
-                href="https://nodejs.org/en/"
-                rel="noreferrer"
-                target="_blank"
-                >NodeJS</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000" class="aoslist">
-            <li class="list">
-              <img
-                class="icon sp"
-                src="/images/logos/redux.svg"
-                alt="node package manager"
-              />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-              <a
-                class="adesk"
-                href="https://react-redux.js.org/"
-                rel="noreferrer"
-                target="_blank"
-                >React Redux</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
-              <img
-                class="icon"
-                src="/images/logos/bootstrap.svg"
-                alt="bootstrap"
-              />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-              <a
-                class="adesk"
-                href="https://getbootstrap.com/"
-                rel="noreferrer"
-                target="_blank"
-                >Bootstrap</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
-              <img class="icon" src="/images/logos/mui.svg" alt="material ui" />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-              <a
-                class="adesk"
-                href="https://material-ui.com/"
-                rel="noreferrer"
-                target="_blank"
-                >Material UI</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
-              <img
-                class="icon"
-                src="/images/logos/chakraUi.svg"
-                alt="chakra ui"
-              />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-              <a
-                class="adesk"
-                href="https://chakra-ui.com/"
-                rel="noreferrer"
-                target="_blank"
-                >Chakra UI</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
-              <img class="icon" src="/images/logos/bulma.svg" alt="bootstrap" />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-              <a
-                class="adesk"
-                href="https://bulma.io/"
-                rel="noreferrer"
-                target="_blank"
-                >Bulma CSS</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
-              <img
-                class="icon"
-                src="/images/logos/wordpress.svg"
-                alt="wordpress"
-              />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-              <a
-                class="adesk"
-                href="https://wordpress.org/"
-                rel="noreferrer"
-                target="_blank"
-                >Wordpress</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
-              <img class="icon" src="/images/logos/ui.svg" alt="ui ux" />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-              <a class="adesk" href="/" target="_blank">UI/UX</a>
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
-              <img class="icon" src="/images/logos/python.svg" alt="python" />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-              <a
-                class="adesk"
-                href="https://www.python.org/"
-                rel="noreferrer"
-                target="_blank"
-                >Python</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
-              <img class="icon" src="/images/logos/git.svg" alt="github" />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-              <a
-                class="adesk"
-                href="https://github.com/"
-                rel="noreferrer"
-                target="_blank"
-                >Github</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
-              <img
-                class="icon"
-                src="/images/logos/photoshop.svg"
-                alt="Adobe Photoshop"
-              />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-              </span>
-              <a
-                class="adesk"
-                href="https://www.adobe.com/in/products/photoshop.html"
-                rel="noreferrer"
-                target="_blank"
-                >Photoshop</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
-              <img
-                class="icon"
-                src="/images/logos/ai.svg"
-                alt="Adobe illustrator"
-              />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-              <a
-                class="adesk"
-                href="https://www.adobe.com/in/products/illustrator.html"
-                rel="noreferrer"
-                target="_blank"
-                >Illustrator</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
-              <img
-                class="icon"
-                src="/images/logos/ae.svg"
-                alt="after effects"
-              />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-              <a
-                class="adesk"
-                href="https://www.adobe.com/in/products/aftereffects.html"
-                rel="noreferrer"
-                target="_blank"
-                >After Effects</a
-              >
-            </li>
-          </div>
-          <div data-aos="flip-up" data-aos-duration="1000">
-            <li class="list">
-              <img
-                class="icon"
-                src="/images/logos/prpro.svg"
-                alt="premiere pro"
-              />
-              <span class="ability-score">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-              <a
-                class="adesk"
-                href="https://www.adobe.com/in/products/premiere.html"
-                rel="noreferrer"
-                target="_blank"
-                >Premiere Pro</a
-              >
-            </li>
-          </div>
-        </ul>
+
+      <div class="skills-container">
+        <div class="skills-parent">
+          <p class="skills-head">Frontend</p>
+          <ul class="listskills">
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img
+                  class="icon"
+                  src="/images/logos/react.svg"
+                  alt="react js"
+                />
+                <p class="adesk">ReactJS</p>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img class="icon" src="/images/logos/nextjs.svg" alt="nextjs" />
+                <p class="adesk">NextJS</p>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img
+                  class="icon"
+                  src="/images/logos/tailwind-css.svg"
+                  alt="tailwind"
+                />
+                <p class="adesk">Tailwind</p>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000" class="aoslist">
+              <li class="list">
+                <img class="icon" src="/images/logos/redux.svg" alt="redux" />
+                <p class="adesk">React Redux</p>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img class="icon" src="/images/logos/sass.svg" alt="sass" />
+                <p class="adesk">Sass</p>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img
+                  class="icon"
+                  src="/images/logos/mui.svg"
+                  alt="material ui"
+                />
+                <p class="adesk">Material UI</p>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img
+                  class="icon"
+                  src="/images/logos/chakraUi.svg"
+                  alt="chakra ui"
+                />
+                <p class="adesk">Chakra UI</p>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="skills-parent">
+          <p class="skills-head">Backend</p>
+          <ul class="listskills">
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img class="icon" src="/images/logos/flask.svg" alt="flask" />
+                <p class="adesk">Flask</p>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img class="icon" src="/images/logos/sanic.png" alt="sanic" />
+                <p class="adesk">Sanic</p>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img class="icon" src="/images/logos/mongodb.svg" alt="mongo" />
+                <p class="adesk">MongoDB</p>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img
+                  class="icon"
+                  src="/images/logos/expressjs.svg"
+                  alt="expressjs"
+                />
+                <p class="adesk">ExpressJS</p>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000" class="aoslist">
+              <li class="list">
+                <img
+                  class="icon sp"
+                  src="/images/logos/nodejs.svg"
+                  alt="node js"
+                />
+                <p class="adesk">NodeJS</p>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000" class="aoslist">
+              <li class="list">
+                <img
+                  class="icon sp"
+                  src="/images/logos/rest-api-icon.svg"
+                  alt="rest"
+                />
+                <p class="adesk">REST</p>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000" class="aoslist">
+              <li class="list">
+                <img class="icon sp" src="/images/logos/jwt.svg" alt="jwt" />
+                <p class="adesk">JWT</p>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000" class="aoslist">
+              <li class="list">
+                <img
+                  class="icon sp"
+                  src="/images/logos/redis.svg"
+                  alt="redis"
+                />
+                <p class="adesk">Redis</p>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skills-container">
+        <div class="skills-parent">
+          <p class="skills-head">General Toolkit</p>
+          <ul class="listskills">
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img
+                  class="icon"
+                  src="/images/logos/javascript.svg"
+                  alt="vanilla javascript"
+                />
+                <a
+                  class="adesk"
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Javascript
+                </a>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img class="icon" src="/images/logos/python.svg" alt="python" />
+                <a
+                  class="adesk"
+                  href="https://www.python.org/"
+                  rel="noreferrer"
+                  target="_blank"
+                  >Python</a
+                >
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img class="icon" src="/images/logos/git.svg" alt="github" />
+                <a
+                  class="adesk"
+                  href="https://github.com/"
+                  rel="noreferrer"
+                  target="_blank"
+                  >Git</a
+                >
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img class="icon" src="/images/logos/docker.svg" alt="docker" />
+                <p class="adesk">Docker</p>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img class="icon" src="/images/logos/ubuntu.svg" alt="ubuntu" />
+                <p class="adesk">Ubuntu</p>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img
+                  class="icon"
+                  src="/images/logos/prettier.svg"
+                  alt="prettier"
+                />
+                <p class="adesk">Prettier</p>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img class="icon" src="/images/logos/figma.svg" alt="figma" />
+                <p class="adesk">Figma</p>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img
+                  class="icon"
+                  src="/images/logos/photoshop.svg"
+                  alt="Adobe Photoshop"
+                />
+                <p class="adesk">Photoshop</p>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="skills-parent">
+          <p class="skills-head">Cloud</p>
+          <ul class="listskills">
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img class="icon" src="/images/logos/ec2.png" alt="ui ux" />
+                <p class="adesk">EC2</p>
+              </li>
+            </div>
+
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img class="icon" src="/images/logos/s3.svg" alt="github" />
+                <p class="adesk">S3</p>
+              </li>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000">
+              <li class="list">
+                <img class="icon" src="/images/logos/ses.svg" alt="github" />
+                <p
+                  class="adesk"
+                  href="https://github.com/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  SES
+                </p>
+              </li>
+            </div>
+          </ul>
+        </div>
       </div>
     </section>
     <!--work-->
@@ -647,6 +484,35 @@
         </div>
         <div class="cards">
           <div class="CardDiv">
+            <div data-aos="flip-up" class="card" id="uniping">
+              <img
+                class="WorkImg"
+                src="/images/covidV.png"
+                alt="Uniping"
+                onclick=""
+              />
+              <p class="AppName">Uniping</p>
+              <p class="CardText">
+                Web3 platform to do on-chain marketing and visualize data.
+                <br />
+                A no-code platfrom to do Promotional NFT marketing and find
+                on-chain addresses using various filters.
+                <br />
+                Tech Stack: NextJS, Python, Web3js, Solidity, theGraph, IPFS
+              </p>
+              <div class="flexLast">
+                <a
+                  class="icon GitIcon"
+                  href="https://uniping.xyz"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><i class="mdi mdi-link-variant"></i
+                ></a>
+                <a class="icon GitIcon uniping-view"
+                  ><i class="mdi mdi-image-multiple"></i
+                ></a>
+              </div>
+            </div>
             <div data-aos="flip-up" class="card" id="covid19">
               <img
                 class="WorkImg"
@@ -854,12 +720,12 @@
             </div>
           </a>
           <a
-            href="https://instagram.com/dev.cj/"
+            href="https://twitter.com/stoic_cj"
             rel="noreferrer"
             target="_blank"
           >
             <div class="flex icon md" id="icon-4">
-              <i class="mdi mdi-instagram"></i>
+              <i class="mdi mdi-twitter"></i>
             </div>
           </a>
           <a href="mailto:chamanjatoliya@gmail.com" target="_top">
@@ -880,6 +746,108 @@
         </div>
       </div>
     </div>
+    <div class="flickity-carousel">
+      <div
+        class="main-carousel"
+        data-flickity='{ "cellAlign": "left", "contain": true, "cellSelector": ".carousel-cell" }'
+      >
+        <img
+          class="close-carousel-button icon"
+          src="/images/close.png"
+          alt=""
+        />
+
+        <div class="carousel-cell">
+          <img
+            class="WorkImg"
+            src="https://res.cloudinary.com/dqv1za6yv/image/upload/v1673014527/personal%20website/vlcsnap-00001_feorwp.png"
+            alt="Uniping"
+            onclick=""
+          />
+        </div>
+        <div class="carousel-cell">
+          <img
+            class="WorkImg"
+            src="https://res.cloudinary.com/dqv1za6yv/image/upload/v1673014527/personal%20website/vlcsnap-00005_a42opp.png"
+            alt="Uniping"
+            onclick=""
+          />
+        </div>
+        <div class="carousel-cell">
+          <img
+            class="WorkImg"
+            src="https://res.cloudinary.com/dqv1za6yv/image/upload/v1673014527/personal%20website/vlcsnap-00006_oyjtzg.png"
+            alt="Uniping"
+            onclick=""
+          />
+        </div>
+        <div class="carousel-cell">
+          <img
+            class="WorkImg"
+            src="https://res.cloudinary.com/dqv1za6yv/image/upload/v1673014527/personal%20website/vlcsnap-00007_t6kyr4.png"
+            alt="Uniping"
+            onclick=""
+          />
+        </div>
+        <div class="carousel-cell">
+          <img
+            class="WorkImg"
+            src="https://res.cloudinary.com/dqv1za6yv/image/upload/v1673014527/personal%20website/vlcsnap-00011_x5kdf2.png"
+            alt="Uniping"
+            onclick=""
+          />
+        </div>
+        <div class="carousel-cell">
+          <img
+            class="WorkImg"
+            src="https://res.cloudinary.com/dqv1za6yv/image/upload/v1673014527/personal%20website/vlcsnap-00011_x5kdf2.png"
+            alt="Uniping"
+            onclick=""
+          />
+        </div>
+        <div class="carousel-cell">
+          <img
+            class="WorkImg"
+            src="https://res.cloudinary.com/dqv1za6yv/image/upload/v1673014526/personal%20website/vlcsnap-00022_hmcul5.png"
+            alt="Uniping"
+            onclick=""
+          />
+        </div>
+        <div class="carousel-cell">
+          <img
+            class="WorkImg"
+            src="https://res.cloudinary.com/dqv1za6yv/image/upload/v1673014526/personal%20website/vlcsnap-00012_hwwjyk.png"
+            alt="Uniping"
+            onclick=""
+          />
+        </div>
+        <div class="carousel-cell">
+          <img
+            class="WorkImg"
+            src="https://res.cloudinary.com/dqv1za6yv/image/upload/v1673014526/personal%20website/vlcsnap-00019_umw46i.png"
+            alt="Uniping"
+            onclick=""
+          />
+        </div>
+        <div class="carousel-cell">
+          <img
+            class="WorkImg"
+            src="https://res.cloudinary.com/dqv1za6yv/image/upload/v1673014526/personal%20website/vlcsnap-00028_pivimp.png"
+            alt="Uniping"
+            onclick=""
+          />
+        </div>
+        <div class="carousel-cell">
+          <img
+            class="WorkImg"
+            src="https://res.cloudinary.com/dqv1za6yv/image/upload/v1673014526/personal%20website/vlcsnap-00014_zvkfkp.png"
+            alt="Uniping"
+            onclick=""
+          />
+        </div>
+      </div>
+    </div>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init()
