@@ -7,23 +7,24 @@
 //   }, 1000)
 // })()
 
-let closeBtn = document.querySelector('.close-carousel-button')
-let viewImage = document.querySelector('.uniping-view')
-let carouselWrapper = document.querySelector('.flickity-carousel')
-let fstate = 0
+// uniping screenshot carousel
+let unipingCloseBtn = document.querySelector('.close-carousel-button')
+let unipingViewImage = document.querySelector('.uniping-view')
+let unipingCarouselWrapper = document.querySelector('.flickity-carousel')
+let unipingState = 0
 
 function toggleCarousel() {
-  if (fstate == 0) {
+  if (unipingState == 0) {
     // close
-    carouselWrapper.style.opacity = '100'
-    carouselWrapper.style.zIndex = '99999'
-    fstate = 1
+    unipingCarouselWrapper.style.opacity = '100'
+    unipingCarouselWrapper.style.zIndex = '99999'
+    unipingState = 1
   } else {
-    carouselWrapper.style.opacity = '0'
-    carouselWrapper.style.zIndex = '-1'
-    fstate = 0
+    unipingCarouselWrapper.style.opacity = '0'
+    unipingCarouselWrapper.style.zIndex = '-1'
+    unipingState = 0
   }
 }
 
-viewImage.addEventListener('click', toggleCarousel)
-closeBtn.addEventListener('click', toggleCarousel)
+unipingViewImage.addEventListener('click', toggleCarousel)
+unipingCloseBtn.addEventListener('click', toggleCarousel)
